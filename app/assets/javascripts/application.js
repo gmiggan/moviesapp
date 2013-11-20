@@ -13,3 +13,33 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//= require jquery-ui
+
+$(function() {
+
+	$('#datepicker').datepicker({
+		dateFormat: 'dd-mm-yy',
+		changeMoth:true,
+		changeYear:true,
+		yearRange: "-5:+20",
+	});
+
+	$("#dialog").dialog();
+	
+	$("#p1").mouseenter(function(){
+		alert("You entered password field!");
+	 });
+	 
+	$("input").focus(function(){
+		$(this).css("background-color", "LightGray");
+	});
+	
+	$("input").blur(function(){
+		$(this).css("background-color","#ffffff");
+	});
+	
+	$("#div1").css("border", "2px. solid green");
+	
+	
+	
+	});
